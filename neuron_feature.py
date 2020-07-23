@@ -17,7 +17,7 @@ from receptive_field import receptive_field, receptive_field_for_unit
 import matplotlib.pyplot as plt
 
 def get_neuron_features(model, dataset, batch_size=128, top_n=100, 
-                        out_dir='./output', mean=[0,0,0], std=[0,0,0]):
+                        out_dir='./output', mean=[0,0,0], std=[1,1,1]):
     """
     Generates neuron features for given model definition using given dataset.
 
